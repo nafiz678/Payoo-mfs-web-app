@@ -38,7 +38,7 @@ document.getElementById("button-login").addEventListener("click", function (even
     if(phoneNumber === "01632820920" && pinNumber === "12345")
     {
         alert("Logged in");
-        window.location.href = "/home.html";
+        window.location.href = "./home.html";
     }
     else{
         alert("Invalid number or pin");
