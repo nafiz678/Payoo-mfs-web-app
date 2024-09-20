@@ -29,12 +29,13 @@
                     <div class="divider"></div>
                     <!-- User action button -->
                      <div>
-                        <button id="btn-show-add-money" class="btn btn-lg">Add Money</button>
-                        <button id="btn-show-cash-out" class="btn btn-lg">Cash Out</button>
+                        <button id="btn-show-add-money" class="btn btn-success">Add Money</button>
+                        <button id="btn-show-cash-out" class="btn btn-active btn-secondary">Cash Out</button>
+                        <button id="transaction" class="btn btn-active btn-secondary">Transaction</button>
                      </div>
                      <div class="divider"></div>
                      <!-- add money form -->
-                     <div id="add-money-form" class="card  bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                     <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
@@ -76,10 +77,21 @@
                       </div>
                       <!-- Cash out end -->
                       
+                      
+                      <!-- Transaction started -->
+                       <div id="transaction-section" class="hidden"> 
+                        <h2 class="text-3xl text-center">Transaction History</h2>
+                        <div id="transaction-container" class="space-y-5 rounded-lg">
+
+                        </div>
+                       </div>
+                       <!-- Transaction end -->
                 </div>
             </div>
         </div>
     </main>
+    <script src="./js/addMoney.js"></script>
+    <script src="./js/utilities.js"></script>
     <script src="./js/home.js"></script>
     <script src="./js/cash-out.js"></script>
     <script src="./js/features.js"></script>
